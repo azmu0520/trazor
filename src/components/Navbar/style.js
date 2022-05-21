@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../../assets/icon/logo.svg';
 import { ReactComponent as Category } from '../../assets/icon/category.svg';
-import { ReactComponent as Arrow } from '../../assets/icon/arrow-up.svg';
+import { ReactComponent as Arrow } from '../../assets/icon/arr1.svg';
+import { ReactComponent as Moon } from '../../assets/icon/moon.svg';
 export const Wrap = styled.header`
   box-sizing: border-box;
   display: flex;
@@ -14,7 +15,13 @@ Wrap.Nav = styled.nav`
   padding: 0 16px;
   background-color: #ffffff;
   height: 64px;
-  width: 100%;
+  max-width: 100%;
+  .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: initial;
+  }
 `;
 
 Wrap.Logo = styled(Logo)`
@@ -24,22 +31,38 @@ Wrap.Logo = styled(Logo)`
 `;
 Wrap.Link = styled.div``;
 Wrap.Category = styled(Category)``;
+Wrap.Moon = styled(Moon)`
+  color: currentcolor;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  font-size: 16px;
+  fill: currentcolor;
+  cursor: pointer;
+  :hover {
+    color: #f0b90b;
+  }
+`;
 
 Wrap.Arrow = styled(Arrow)`
   fill: #707a8a;
-  transform: rotate(180deg);
-  transition: all 0.2s linear;
+  width: 8px;
+  margin-left: 4px;
+  /* transform: rotate(180deg); */
+  transition: all 0.06s linear;
 `;
 Wrap.Wrap = styled.div`
   display: flex;
-  margin-left: 8px;
-  margin-right: 8px;
-  height: 100%;
+  margin-left: ${({ left }) => (left === 'true' ? 'auto' : '0')};
+  padding: 0 8px;
+  /* height: 100%; */
   align-items: center;
   cursor: pointer;
   color: #1e2329;
   font-size: 14px;
   transition: all 0.1s linear;
+  border-right: ${({ border }) =>
+    border === 'true' ? '1px solid #b7bdc6' : ''};
   span {
     display: flex;
     position: relative;
@@ -69,7 +92,7 @@ Wrap.Wrap = styled.div`
     color: #f0b90b;
   }
   &:hover ${Wrap.Arrow} {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
 `;
 
@@ -103,8 +126,10 @@ Wrap.Btn = styled.div`
   background-image: none;
   background-color: rgb(252, 213, 53);
   font-weight: 400;
+  cursor: pointer;
+  :hover {
+    background-color: rgba(252, 213, 53, 0.8);
+  }
 `;
 
-Wrap.Section = styled.section`
-  background-color: #fafafa;
-`;
+Wrap.Card = styled.section``;
