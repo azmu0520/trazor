@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Gilroy-Regular;
+  font-family: 'Gilroy-Regular';
   src: url('Gilroy-Light.otf');
 }
 
@@ -9,9 +9,6 @@
   box-sizing: border-box;
   font-family: 'Gilroy-Regular', sans-serif;
   font-style: normal;
-}
-body {
-  overflow: scroll;
 }
 
 header {
@@ -102,7 +99,10 @@ header {
   transition: all 0.4s ease-in;
   background: rgba(0, 0, 0, 0.6);
 }
-
+.plp--nav .menu {
+  height: 60vh;
+  top: 44px;
+}
 .open {
   left: 0;
 }
@@ -128,8 +128,8 @@ header {
   border: 1px solid #ffffff;
   border-radius: 10px;
   position: fixed;
-  right: 23px;
-  bottom: 64px;
+  right: 24px;
+  bottom: 24px;
   z-index: 1000;
 }
 
