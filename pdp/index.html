@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/pdp/css/cart.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Product Details Page</title>
   </head>
@@ -80,33 +81,140 @@
         </ul>
       </nav>
     </header>
+    <div class="cart__modal">
+      <div class="modal__header">
+        <h3 class="cart__title">Cart</h3>
+        <span class="modal__exit">
+          <img src="/pdp/assets/icons/close.svg" alt="close" />
+        </span>
+      </div>
+      <div class="products__grid">
+        <div class="grid__row">
+          <div class="row__image">
+            <img src="/pdp/assets/images/cart_product.png" alt="scroll__img" />
+          </div>
+          <div class="row__detail">
+            <div class="detail__title">Core Razor</div>
+            <span class="detail__color">Black</span>
+            <div class="cart__cta">- <span>1</span> +</div>
+          </div>
+          <div class="row__price">$2.99</div>
+        </div>
+        <div class="grid__row">
+          <div class="row__image">
+            <img src="/pdp/assets/images/cart_product.png" alt="scroll__img" />
+          </div>
+          <div class="row__detail">
+            <div class="detail__title">Core Razor</div>
+            <span class="detail__color">Black</span>
+            <div class="cart__cta">- <span>1</span> +</div>
+            <div class="detail__refil">Get Refill Plan, Save 20%</div>
+          </div>
+          <div class="row__price">$2.99 <span>$3.50</span></div>
+        </div>
+      </div>
+      <div class="adds__section">
+        <h3 class="adds__title">Add ons</h3>
+        <div class="adds__product">
+          <div class="row__image">
+            <img src="/pdp/assets/images/cart_product.png" alt="scroll__img" />
+          </div>
+          <div class="row__detail">
+            <div class="detail__title">
+              Product Name
+              <span class="title__price"> <span>$3.50</span> $2.99 </span>
+            </div>
+            <span class="detail__off"
+              >$10 off when you add in the next 5 minutes</span
+            >
+            <div class="adds__cta"><a href="#">Add</a></div>
+          </div>
+        </div>
+        <div class="adds__product">
+          <div class="row__image">
+            <img src="/pdp/assets/images/cart_product.png" alt="scroll__img" />
+          </div>
+          <div class="row__detail">
+            <div class="detail__title">
+              Product Name
+              <span class="title__price"> <span>$3.50</span> $2.99 </span>
+            </div>
+            <span class="detail__off"
+              >$10 off when you add in the next 5 minutes</span
+            >
+            <div class="adds__cta"><a href="#">Add</a></div>
+          </div>
+        </div>
+        <div class="adds__footer">
+          <h3 class="footer__title">Subtotal</h3>
+          <span class="footer__subtitle">
+            You’re $1 away from Free Shipping</span
+          >
+          <div class="footer__progress__bar"></div>
+          <div class="modal__footer__cta">checkout</div>
+          <div class="footer__affirm">
+            Starting at $23/mo with
+            <img src="/pdp/assets/icons/affirm.svg" alt="affirm" /> .
+            <a href="#"> Learn More </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="opener__container">
       <div class="scroll__images">
-        <!-- <div class="swiper-wrapper"> -->
-        <div class="img__wrap">
+        <div class="img__wrap desctop__only">
           <img
             src="/pdp/assets/images/scroll__img.png"
             alt="scroll__img"
             class="scroll__image"
           />
         </div>
-        <div class="img__wrap">
+        <div class="img__wrap desctop__only">
           <img
             src="/pdp/assets/images/scroll2.jpg"
             alt="scroll__img"
             class="scroll__image"
           />
         </div>
-        <div class="img__wrap">
+        <div class="img__wrap desctop__only">
           <img
             src="/pdp/assets/images/scroll__img.png"
             alt="scroll__img"
             class="scroll__image"
           />
         </div>
-        <!-- </div> -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+        <div class="scroll__images swiper swiper2 mobile__only">
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="img__wrap swiper-slide">
+              <img
+                src="/pdp/assets/images/scroll__img.png"
+                alt="scroll__img"
+                class="scroll__image"
+              />
+            </div>
+            <div class="img__wrap swiper-slide">
+              <img
+                src="/pdp/assets/images/scroll__img.png"
+                alt="scroll__img"
+                class="scroll__image"
+              />
+            </div>
+            <div class="img__wrap swiper-slide">
+              <img
+                src="/pdp/assets/images/scroll__img.png"
+                alt="scroll__img"
+                class="scroll__image"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev-2">
+            <img src="/pdp/assets/icons/arrow--small.svg" alt="arrow--small" />
+          </div>
+          <div class="swiper-button-next-2">
+            <img src="/pdp/assets/icons/arrow--small.svg" alt="arrow--small" />
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
       <div class="product__details">
         <div class="detail__wrap">
@@ -171,10 +279,6 @@
               />
               <label for="test2">Plan</label>
             </div>
-            <!-- <div class="plan__wrap">
-              <input type="radio" class="plan__input" />
-              <label class="plan__label"><span></span> Plan</label>
-            </div> -->
           </div>
           <div class="detail__choices">
             <div class="choice__wrap choice__active">
@@ -240,7 +344,11 @@
             <input type="text" class="engraving__input" />
             <div class="engraving__text">16 characters maximum</div>
           </div>
-          <div class="detail__cta">add to cart</div>
+          <div class="detail__cta desctop__only">add to cart</div>
+          <div class="engraving__text padding mobile__only">
+            If you don’t like it, send it back for a full refund within 60 days.
+            You’ve got nothing to lose.
+          </div>
         </div>
       </div>
     </div>
@@ -256,7 +364,7 @@
           minim veniam.
         </div>
       </div>
-      <div class="grid__item item--bg--black">
+      <div class="grid__item item--bg--black order--last">
         <div class="item__title">Lorem ipsum dolor</div>
         <div class="item__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -271,48 +379,56 @@
 
     <div class="product__collection">
       <div class="collection__title">You might also like</div>
-      <div class="products__wrap">
-        <div class="product__wrap">
-          <img
-            src="/home/assets/images/shaver.png"
-            alt="shaver"
-            class="product__img"
-          />
-          <div class="product__swatches">
-            <img src="/home/assets/icons/selected color.svg" alt="color" />
-            <img src="/home/assets/icons/color 3.svg" alt="color" />
-            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+      <div class="products__wrap swiper swiper3">
+        <div class="swiper-wrapper">
+          <div class="product__wrap swiper-slide">
+            <img
+              src="/home/assets/images/shaver.png"
+              alt="shaver"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <img src="/home/assets/icons/selected color.svg" alt="color" />
+              <img src="/home/assets/icons/color 3.svg" alt="color" />
+              <img src="/home/assets/icons/Group 52.svg" alt="color" />
+            </div>
+            <h2 class="product__title">Product title</h2>
+            <span class="product__price"
+              >From $99.00 <span> $150.00 </span></span
+            >
           </div>
-          <h2 class="product__title">Product title</h2>
-          <span class="product__price">From $99.00 <span> $150.00 </span></span>
-        </div>
-        <div class="product__wrap">
-          <img
-            src="/home/assets/images/shaver.png"
-            alt="shaver"
-            class="product__img"
-          />
-          <div class="product__swatches">
-            <img src="/home/assets/icons/selected color.svg" alt="color" />
-            <img src="/home/assets/icons/color 3.svg" alt="color" />
-            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+          <div class="product__wrap swiper-slide">
+            <img
+              src="/home/assets/images/shaver.png"
+              alt="shaver"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <img src="/home/assets/icons/selected color.svg" alt="color" />
+              <img src="/home/assets/icons/color 3.svg" alt="color" />
+              <img src="/home/assets/icons/Group 52.svg" alt="color" />
+            </div>
+            <h2 class="product__title">Product title</h2>
+            <span class="product__price"
+              >From $99.00 <span> $150.00 </span></span
+            >
           </div>
-          <h2 class="product__title">Product title</h2>
-          <span class="product__price">From $99.00 <span> $150.00 </span></span>
-        </div>
-        <div class="product__wrap">
-          <img
-            src="/home/assets/images/shaver.png"
-            alt="shaver"
-            class="product__img"
-          />
-          <div class="product__swatches">
-            <img src="/home/assets/icons/selected color.svg" alt="color" />
-            <img src="/home/assets/icons/color 3.svg" alt="color" />
-            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+          <div class="product__wrap swiper-slide">
+            <img
+              src="/home/assets/images/shaver.png"
+              alt="shaver"
+              class="product__img"
+            />
+            <div class="product__swatches">
+              <img src="/home/assets/icons/selected color.svg" alt="color" />
+              <img src="/home/assets/icons/color 3.svg" alt="color" />
+              <img src="/home/assets/icons/Group 52.svg" alt="color" />
+            </div>
+            <h2 class="product__title">Product title</h2>
+            <span class="product__price"
+              >From $99.00 <span> $150.00 </span></span
+            >
           </div>
-          <h2 class="product__title">Product title</h2>
-          <span class="product__price">From $99.00 <span> $150.00 </span></span>
         </div>
       </div>
     </div>
@@ -345,7 +461,8 @@
     </footer>
 
     <script src="/home/js/node.js"></script>
-    <script src="/pdp/js/swiper.js"></script>
+    <script defer src="/pdp/js/swiper.js"></script>
+    <script src="/pdp/js/modal.js"></script>
     <script src="/pdp/js/select.js"></script>
   </body>
 </html>
