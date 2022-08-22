@@ -97,7 +97,6 @@ header {
   top: 84px;
   left: -260px;
   transition: all 0.4s ease-in;
-  background: rgba(0, 0, 0, 0.6);
 }
 .plp--nav .menu {
   height: 60vh;
@@ -108,10 +107,11 @@ header {
 }
 .menu__list {
   padding: 20px 40px;
-  height: 270px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgba(1, 1, 1, 0.8);
 }
 .nav__list__item a {
   color: inherit;
