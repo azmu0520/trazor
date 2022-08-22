@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/home/css/style.css" />
+    <link rel="stylesheet" href="/home/css/footer.css" />
+    <link rel="stylesheet" href="/pdp/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Product Details Page</title>
+  </head>
+  <body>
+    <div class="gift__box">
+      <img src="/home/assets/icons/giftbox 1.svg" alt="giftbox" />
+    </div>
+
+    <header>
+      <nav class="header__nav pdp__nav" id="navbar">
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="nav__list__item">
+              <a href="#"> Razors </a>
+            </li>
+
+            <li class="nav__list__item">
+              <a href="#"> Shaving Supplies </a>
+            </li>
+
+            <li class="nav__list__item">
+              <a href="#"> Gifts </a>
+            </li>
+
+            <li class="nav__list__item">
+              <a href="#"> The Story </a>
+            </li>
+
+            <li class="nav__list__item">
+              <a href="#"> The Difference </a>
+            </li>
+
+            <li class="nav__list__item">
+              <a href="#"> More </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav__list">
+          <li class="mobile__only" id="mobile__hamburger">
+            <img src="/home/assets/icons/hamburger.svg" alt="hamburger" />
+          </li>
+          <li class="nav__list__item mobile__list__item">
+            <img
+              src="/home/assets/icons/logo.svg"
+              alt="logo"
+              class="nav__logo__icon"
+            />
+            <span class="desctop__only"> Razors </span>
+          </li>
+          <li class="nav__list__item desctop__only">Shaving Supplies</li>
+          <li class="nav__list__item desctop__only">Gifts</li>
+          <li class="nav__list__item desctop__only">The Story</li>
+          <li class="nav__list__item desctop__only">The Difference</li>
+          <li class="nav__list__item desctop__only">More</li>
+          <li class="nav__list__item mobile--right-icons">
+            <img
+              src="/home/assets/icons/user.svg"
+              alt="user"
+              class="nav__user__icon"
+            />
+            <img
+              src="/home/assets/icons/cart.svg"
+              alt="user"
+              class="nav__cart__icon"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="opener__container">
+      <div class="scroll__images">
+        <!-- <div class="swiper-wrapper"> -->
+        <div class="img__wrap">
+          <img
+            src="/pdp/assets/images/scroll__img.png"
+            alt="scroll__img"
+            class="scroll__image"
+          />
+        </div>
+        <div class="img__wrap">
+          <img
+            src="/pdp/assets/images/scroll2.jpg"
+            alt="scroll__img"
+            class="scroll__image"
+          />
+        </div>
+        <div class="img__wrap">
+          <img
+            src="/pdp/assets/images/scroll__img.png"
+            alt="scroll__img"
+            class="scroll__image"
+          />
+        </div>
+        <!-- </div> -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+      <div class="product__details">
+        <div class="detail__wrap">
+          <div class="details__header">
+            <h2 class="header__title">Genesis Razor</h2>
+            <span class="detail__price">$24.99</span>
+          </div>
+          <div class="detail__reviews">
+            <img src="/pdp/assets/icons/star.svg" alt="star" />
+            <img src="/pdp/assets/icons/star.svg" alt="star" />
+            <img src="/pdp/assets/icons/star.svg" alt="star" />
+            <img src="/pdp/assets/icons/star.svg" alt="star" />
+            <img src="/pdp/assets/icons/star.svg" alt="star" />
+            <div class="review__number">13 reviews</div>
+          </div>
+          <div class="detail__affirm__msg">
+            Financing as low as $23/month with
+            <img
+              src="/pdp/assets/icons/affirm.svg"
+              alt="affirm"
+              class="affirm__icon"
+            />
+          </div>
+          <p class="detail__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex .
+          </p>
+          <div class="detail__colors">
+            <div class="colors__title" id="title">Color: <span>Gold</span></div>
+            <div class="color__wrap">
+              <div class="color color--active" name="Gold">
+                <span class="gold"></span>
+              </div>
+              <div class="color" name="Grey">
+                <span class="grey"></span>
+              </div>
+              <div class="color" name="Black">
+                <span class="black"></span>
+              </div>
+            </div>
+          </div>
+          <div class="detail__select__plan">
+            <div class="plan__title">Select a plan:</div>
+            <div class="plan__wrap">
+              <input
+                type="radio"
+                id="test1"
+                class="plan__input"
+                name="radio-group"
+                checked
+              />
+              <label for="test1">Without a Refill Plan</label>
+            </div>
+            <div class="plan__wrap">
+              <input
+                type="radio"
+                class="plan__input"
+                id="test2"
+                name="radio-group"
+              />
+              <label for="test2">Plan</label>
+            </div>
+            <!-- <div class="plan__wrap">
+              <input type="radio" class="plan__input" />
+              <label class="plan__label"><span></span> Plan</label>
+            </div> -->
+          </div>
+          <div class="detail__choices">
+            <div class="choice__wrap choice__active">
+              <img src="/pdp/assets/icons/choice3.svg" class="choice__img" />
+              <div class="choice__title">
+                OneBlade Black tile after shave balm
+              </div>
+              <span class="choice__price">$3.50</span>
+            </div>
+            <div class="choice__wrap">
+              <img src="/pdp/assets/icons/choice1.svg" class="choice__img" />
+              <div class="choice__title">
+                OneBlade Black tile after shave balm
+              </div>
+              <span class="choice__price">$3.50</span>
+            </div>
+            <div class="choice__wrap">
+              <img src="/pdp/assets/icons/choice2.svg" class="choice__img" />
+              <div class="choice__title">
+                OneBlade Black tile after shave balm
+              </div>
+              <span class="choice__price">$3.50</span>
+            </div>
+          </div>
+          <div class="detail__deliver">
+            <div class="deliver__title">
+              Deliver every:
+              <li class="language-select">
+                <div class="select__field">
+                  <object
+                    data="/pdp/assets/icons/arrow.svg"
+                    class="select__icon"
+                  ></object>
+                </div>
+                <div class="select__options hidden">
+                  <div class="option">
+                    <span class="option__content">
+                      <span class="title__num"> 6 months </span>(I shave onece a
+                      week or less)
+                    </span>
+                  </div>
+                  <div class="option">
+                    <span class="option__content">
+                      <span class="title__num"> 3 months </span>(I shave onece a
+                      week or less)</span
+                    >
+                  </div>
+                  <div class="option">
+                    <span class="option__content">
+                      <span class="title__num"> 1 months </span>(I shave onece a
+                      week or less)</span
+                    >
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="detail__engraving__wrap">
+            <h4 class="engraving__title">
+              <input type="checkbox" id="engraving" />
+              <label for="engraving">Add Engraving (+$10)</label>
+            </h4>
+            <input type="text" class="engraving__input" />
+            <div class="engraving__text">16 characters maximum</div>
+          </div>
+          <div class="detail__cta">add to cart</div>
+        </div>
+      </div>
+    </div>
+    <div class="banner__grid">
+      <div class="grid__item">
+        <img src="/pdp/assets/images/pdpbanners.jpg" alt="pdpbanners" />
+      </div>
+      <div class="grid__item item--bg--black">
+        <div class="item__title">Lorem ipsum dolor</div>
+        <div class="item__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </div>
+      </div>
+      <div class="grid__item item--bg--black">
+        <div class="item__title">Lorem ipsum dolor</div>
+        <div class="item__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </div>
+      </div>
+      <div class="grid__item">
+        <img src="/pdp/assets/images/pdpbanners2.jpg" alt="pdpbanners" />
+      </div>
+    </div>
+
+    <div class="product__collection">
+      <div class="collection__title">You might also like</div>
+      <div class="products__wrap">
+        <div class="product__wrap">
+          <img
+            src="/home/assets/images/shaver.png"
+            alt="shaver"
+            class="product__img"
+          />
+          <div class="product__swatches">
+            <img src="/home/assets/icons/selected color.svg" alt="color" />
+            <img src="/home/assets/icons/color 3.svg" alt="color" />
+            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+          </div>
+          <h2 class="product__title">Product title</h2>
+          <span class="product__price">From $99.00 <span> $150.00 </span></span>
+        </div>
+        <div class="product__wrap">
+          <img
+            src="/home/assets/images/shaver.png"
+            alt="shaver"
+            class="product__img"
+          />
+          <div class="product__swatches">
+            <img src="/home/assets/icons/selected color.svg" alt="color" />
+            <img src="/home/assets/icons/color 3.svg" alt="color" />
+            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+          </div>
+          <h2 class="product__title">Product title</h2>
+          <span class="product__price">From $99.00 <span> $150.00 </span></span>
+        </div>
+        <div class="product__wrap">
+          <img
+            src="/home/assets/images/shaver.png"
+            alt="shaver"
+            class="product__img"
+          />
+          <div class="product__swatches">
+            <img src="/home/assets/icons/selected color.svg" alt="color" />
+            <img src="/home/assets/icons/color 3.svg" alt="color" />
+            <img src="/home/assets/icons/Group 52.svg" alt="color" />
+          </div>
+          <h2 class="product__title">Product title</h2>
+          <span class="product__price">From $99.00 <span> $150.00 </span></span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="links">
+        <img
+          src="/home/assets/icons/facebook.svg"
+          alt="facebook"
+          class="facebook__icon"
+        />
+        <img
+          src="/home/assets/icons/instagram.svg"
+          alt="instagram"
+          class="instagram__icon"
+        />
+        <img
+          src="/home/assets/icons/youtube.svg"
+          alt="youtube"
+          class="youtube__icon"
+        />
+      </div>
+      <div class="footer__controllers">
+        <input class="footer__input" placeholder="Write your email ..." />
+        <div class="footer__cta">Join the family</div>
+      </div>
+      <div class="footer__text">
+        The only way to discover exclusive deals, new product launches and more
+      </div>
+    </footer>
+
+    <script src="/home/js/node.js"></script>
+    <script src="/pdp/js/swiper.js"></script>
+    <script src="/pdp/js/select.js"></script>
+  </body>
+</html>
