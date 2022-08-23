@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy-Regular.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,13 +24,9 @@
   overflow: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0;
+  background: transparent;
 }
-/* Optional: show position indicator in red */
-/* ::-webkit-scrollbar-thumb {
-  background: #ff0000;
-} */
 
 .scroll__images {
   display: flex;
@@ -47,7 +48,6 @@
 .product__details {
   flex: 1;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   padding-top: 75px;
   background: #f3f3f5;

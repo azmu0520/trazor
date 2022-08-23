@@ -1,13 +1,13 @@
-@font-face {
+/* @font-face {
   font-family: 'Gilroy-Regular';
   src: url('Gilroy-Light.otf');
-}
+} */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy-Regular', sans-serif;
+  /* font-family: 'Gilroy-Regular', sans-serif; */
   font-style: normal;
 }
 

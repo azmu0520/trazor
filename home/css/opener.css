@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'Gilroy-Regular';
-  src: url('Gilroy-Light.otf');
+  src: url('/fonts/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
 }
 
 * {
@@ -13,10 +18,15 @@
 
 .opener {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 800px;
-  background: #000;
+  min-height: 800px;
+  background: rgb(28, 28, 30);
   padding: 0 80px;
+  margin-top: 44px;
+}
+.opener__modal {
+  min-height: 840px;
 }
 .opener__wrap {
   display: flex;
@@ -30,8 +40,9 @@
 }
 
 .opener__image {
-  width: 45%;
-  padding: 100px;
+  width: 579px;
+  height: 579px;
+  /* padding: 100px; */
 }
 
 .opener__logo {
@@ -48,10 +59,12 @@
 .operer__title {
   font-size: 56px;
   line-height: 142.83%;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #ffffff;
   padding: 32px 0 80px 0;
+  font-family: 'Gilroy-Regular';
+  font-weight: 400;
 }
 
 .operner__cta {
@@ -67,6 +80,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #000000;
+  font-family: 'Gilroy-Bold';
 }
 
 .support__companies {
@@ -92,16 +106,16 @@
 }
 
 .companies__list {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 }
 .mobile {
   display: none;
 }
-
+.sponsers {
+  max-width: 100%;
+  /* width: 100%; */
+}
 @media (max-width: 800px) {
   .opener__wrap {
     min-width: 343px;

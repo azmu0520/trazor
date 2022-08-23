@@ -1,8 +1,12 @@
 @font-face {
   font-family: 'Gilroy-Regular';
-  src: url('Gilroy-Light.otf');
+  src: url('/fonts/Gilroy-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,23 +18,30 @@
 .media__banner {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  position: relative;
   background: #1c1c1e;
 }
-
+.banner__wrap {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .bg {
   background: #2c2c2e;
 }
 .banner--left {
-  justify-content: start;
+  justify-content: center;
   background: #2c2c2e;
 }
 .banner__image {
   width: 930px;
-  height: 800px;
+  height: calc(100% - 60px);
+  margin-left: auto;
 }
 
 .banner__content {
@@ -43,12 +54,15 @@
   height: 605px;
   background: #fff;
   box-sizing: border-box !important;
-
   position: absolute;
 }
 .content--left {
   right: 0 !important;
   left: unset;
+}
+.left--img {
+  margin-right: auto;
+  margin-left: unset;
 }
 
 .media__banner__fullwidth {
@@ -124,7 +138,9 @@
 .product__img {
   max-width: 100%;
 }
-
+.player__wrapper {
+  position: relative;
+}
 .obs__media {
   display: flex;
   align-items: center;
@@ -132,6 +148,15 @@
   max-width: 100%;
   height: 680px;
   background-color: #1c1c1e;
+  position: relative;
+}
+
+.play__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 #player {
   max-width: 100%;
@@ -171,6 +196,7 @@
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 8px;
+  font-family: 'Gilroy-Bold';
 }
 .product__price {
   font-weight: 300;
@@ -182,6 +208,7 @@
 .product__price span {
   text-decoration-line: line-through;
   color: #bebebe;
+  padding: 0 3px;
 }
 
 .product__text {
@@ -190,6 +217,7 @@
   text-align: center;
   color: #404042;
   padding: 16px 0 46px 0;
+  /* font-family: 'Gilroy-Regular'; */
 }
 .product__cta {
   display: flex;
@@ -206,6 +234,7 @@
   width: 265px;
   height: 66px;
   cursor: pointer;
+  font-family: 'Gilroy-Bold';
 }
 
 .quota__container {
@@ -238,6 +267,8 @@
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #ffffff;
+  font-family: 'Gilroy-Regular';
+  font-weight: 500;
 }
 
 .footer__banner {
