@@ -2,7 +2,10 @@
   font-family: 'Gilroy-Regular';
   src: url('/fonts/Gilroy-Regular.ttf');
 }
-
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
+}
 * {
   padding: 0;
   margin: 0;
@@ -75,6 +78,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #000000;
+  font-family: 'Gilroy-Bold';
 }
 .detail__price {
   font-weight: 600;
@@ -90,6 +94,9 @@
   line-height: 16px;
   color: #000000;
   padding: 16px 0 8px 0;
+}
+.detail__reviews img {
+  margin-right: 8px;
 }
 .review__number {
   margin-left: 16px;
@@ -126,6 +133,7 @@
 .colors__title span {
   font-size: 16px;
   font-weight: 600;
+  margin-left: 3px;
 }
 
 .color__wrap {
@@ -336,13 +344,14 @@
 }
 
 .title__num {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #000000;
   padding-right: 5px;
+  font-family: 'Gilroy-Bold';
 }
 
 .deliver__icon {
@@ -376,6 +385,7 @@
   text-align: center;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  font-family: 'Gilroy-Bold';
   color: #ffffff;
 }
 
@@ -429,6 +439,7 @@
   text-transform: uppercase;
   color: #000000;
   padding: 8px 0;
+  font-family: 'Gilroy-Bold';
 }
 
 .product__price {
@@ -552,6 +563,7 @@
   .img__wrap {
     width: 100%;
     min-height: 100%;
+    padding: 50px 30px !important;
   }
 
   .padding {
@@ -615,5 +627,6 @@
     line-height: 40px;
     padding: 40px 16px 18px 16px;
     text-align: center;
+    font-family: 'Gilroy-Bold';
   }
 }

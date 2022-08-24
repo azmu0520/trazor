@@ -1,13 +1,16 @@
-/* @font-face {
+@font-face {
   font-family: 'Gilroy-Regular';
-  src: url('Gilroy-Light.otf');
-} */
-
+  src: url('/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Gilroy-Regular', sans-serif; */
+  font-family: 'Gilroy-Regular', sans-serif;
   font-style: normal;
 }
 
@@ -42,6 +45,7 @@
   text-transform: uppercase;
   color: #222222;
   padding-bottom: 24px;
+  font-family: 'Gilroy-Bold';
 }
 
 .content__text {
@@ -78,7 +82,7 @@
   text-align: center;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-
+  font-family: 'Gilroy-Bold';
   color: #000000;
 }
 .filter__wrap {
@@ -102,7 +106,7 @@
   cursor: pointer;
 }
 .filter__item--active {
-  font-weight: 500;
+  font-family: 'Gilroy-Bold';
 }
 .products__tip__wrap {
   display: flex;
@@ -117,13 +121,15 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #000000;
+  font-family: 'Gilroy-Bold';
 }
 
-.product__wrap {
+.product__wrap a {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 60px 0;
+  text-decoration: none;
 }
 
 .product__title {
@@ -134,6 +140,7 @@
   text-transform: uppercase;
   color: #000000;
   padding: 8px 0;
+  font-family: 'Gilroy-Bold';
 }
 
 .product__price {
@@ -209,6 +216,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #ffffff;
+  font-family: 'Gilroy-Bold';
 }
 
 @media (max-width: 800px) {
