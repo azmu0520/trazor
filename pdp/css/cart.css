@@ -1,18 +1,19 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .cart__modal {
   position: absolute;
   top: 0;
+  right: -400px;
   display: flex;
   flex-direction: column;
   width: 375px;
   height: fit-content;
-  right: -10000px;
   transition: all 1s linear;
   z-index: 1000000;
   background: white;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .modal__open {
@@ -59,6 +60,13 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 5px;
+}
+.swiper-scrollbar {
+  height: 1px !important;
+  background: #fff;
+}
+.swiper-scrollbar-drag {
+  background: #000;
 }
 
 .row__price {
@@ -113,7 +121,6 @@ body {
 .detail__refil {
   font-size: 14px;
   line-height: 16px;
-  text-align: right;
   text-decoration-line: underline;
   color: #222222;
   margin-top: 25px;
